@@ -1,0 +1,28 @@
+<template>
+  <span class="avatar">
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on, attrs }">
+        <v-avatar v-bind="attrs" v-on="on" size="45">
+          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+        </v-avatar>
+      </template>
+      <span>Abdurrahman Ramadhan</span>
+    </v-tooltip>
+  </span>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="css" scoped>
+.v-avatar:hover {
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  z-index: 100;
+}
+
+.v-avatar {
+  /* border: 2px solid #0c0b8b; */
+  border: 2px solid black;
+}
+</style>
