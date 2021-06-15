@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" xl="2" lg="3" md="4" sm="6">
-    <v-card>
+    <v-card elevation="5">
       <v-card-title>
         Madzas
         <v-spacer />

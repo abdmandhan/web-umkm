@@ -21,8 +21,8 @@ export default {};
   z-index: 100;
 }
 
-.v-avatar {
-  /* border: 2px solid #0c0b8b; */
-  border: 2px solid black;
-}
+/* .v-avatar { */
+/* border: 2px solid #0c0b8b; */
+/* border: 2px solid black; */
+/* } */
 </style>

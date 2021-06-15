@@ -21,6 +21,13 @@
           </v-col>
           <v-col xl="6" cols="12" lg="6" md="6">
             Alamat & kontak
+            <div>
+              Jl. Kumbang No. 14, Cilibende - Bogor Tengah
+            </div>
+            <div><v-icon color="white">mdi-phone</v-icon> (0251) 8376845</div>
+            <div>
+              <v-icon color="white">mdi-email</v-icon> sv@apps.ipb.ac.id
+            </div>
           </v-col>
         </v-row>
         <v-row>
@@ -48,5 +55,6 @@ export default {
 .footer {
   color: white !important;
   background-image: url("~/assets/footerbg.jpg");
+  background-repeat: initial;
 }
 </style>
