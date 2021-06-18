@@ -72,7 +72,7 @@ export default {
     };
   },
   mounted() {
-    this.$axios.get("http://localhost:4003/team").then(result => {
+    this.$axios.get("/team").then(result => {
       this.teams = result.data.data;
     });
   }
