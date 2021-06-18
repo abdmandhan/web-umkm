@@ -2,3 +2,9 @@
   background-color: #282828;
   font-family: 'Nunito Sans', sans-serif !important;
 }
+
+
+a{
+  text-decoration: none;
+  color: white !important;
+}

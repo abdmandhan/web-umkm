@@ -32,7 +32,25 @@
           </v-card-title>
           <v-card-text>
             <v-row>
-              <CardWeb v-for="(a, b) in 24" :key="b" />
+              <v-col
+                cols="12"
+                xl="2"
+                lg="3"
+                md="4"
+                sm="6"
+                v-if="$store.state.loading"
+                v-for="(a, i) in 22"
+                :key="i * 1000"
+              >
+                <v-sheet class="pa-3 elevation-10">
+                  <v-skeleton-loader
+                    class="mx-auto"
+                    max-width="300"
+                    type="card"
+                  ></v-skeleton-loader>
+                </v-sheet>
+              </v-col>
+              <CardWeb v-for="(a, b) in teams" :key="b" :data="a" />
             </v-row>
           </v-card-text>
         </v-card>
@@ -49,7 +67,14 @@ export default {
     CardWeb
   },
   data() {
-    return {};
+    return {
+      teams: []
+    };
+  },
+  mounted() {
+    this.$axios.get("http://localhost:4003/team").then(result => {
+      this.teams = result.data.data;
+    });
   }
 };
 </script>

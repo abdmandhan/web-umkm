@@ -3,16 +3,26 @@
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
         <v-avatar v-bind="attrs" v-on="on" size="45">
-          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+          <img :src="data.img" alt="John" v-if="data.img" />
+          <img src="http://localhost:4003/photo/dummy.png" alt="" v-else />
         </v-avatar>
       </template>
-      <span>Abdurrahman Ramadhan</span>
+      <span>{{ data.name }}</span>
     </v-tooltip>
   </span>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Object,
+      default() {
+        return {};
+      }
+    }
+  }
+};
 </script>
 
 <style lang="css" scoped>

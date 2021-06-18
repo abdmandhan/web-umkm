@@ -32,6 +32,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/axios.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -48,6 +49,34 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
+  // loading: {
+  //   color: 'white',
+  //   height: '5px',
+  //   continuous: true
+  // },
+
+  toast: {
+    position: 'top-right',
+    theme: 'toasted-primary',
+    duration: 4000,
+    keepOnHover: true,
+    iconPack: 'mdi',
+    action: {
+      icon: 'mdi-close',
+      onClick: (e, toastObject) => {
+        toastObject.goAway(0);
+      }
+    },
+    register: [ // Register custom toasts
+      {
+        name: 'my-error',
+        message: 'Oops...Something went wrong',
+        options: {
+          type: 'error'
+        }
+      }
+    ]
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

@@ -1,15 +1,25 @@
 <template>
   <div class="avatar-group">
-    <Avatar :style="{ position: 'relative' }" />
-    <Avatar :style="{ position: 'relative', left: '-20px' }" />
-    <Avatar :style="{ position: 'relative', left: '-40px' }" />
-    <Avatar :style="{ position: 'relative', left: '-60px' }" />
-    <Avatar :style="{ position: 'relative', left: '-80px' }" />
+    <Avatar
+      :style="{ position: 'relative', left: `-${i * 20}px` }"
+      v-for="(item, i) in data"
+      :key="i"
+      :data="item"
+    />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Array,
+      default() {
+        return [];
+      }
+    }
+  }
+};
 </script>
 
 <style lang="css">

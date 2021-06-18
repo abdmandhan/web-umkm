@@ -7,7 +7,9 @@
       src="/footerbg.jpg"
       style="color:white"
     >
-      <h4>Portal UMKM Bogor</h4>
+      <nuxt-link to="/">
+        <h4>Portal UMKM Bogor</h4>
+      </nuxt-link>
       <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
     </v-app-bar>
     <v-main>
