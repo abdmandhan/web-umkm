@@ -3,16 +3,24 @@
     <v-row justify="center" align="center">
       <div class="home-img" />
       <v-col class="home-section text-center">
-        <img src="~/assets/logo_ipb.png" width="100" height="100" />
+        <img
+          src="~/assets/sv.png"
+          height="100"
+          style="margin-right:20px;"
+          class="img-sv"
+        />
         <img src="~/assets/logo_bogor.png" width="100" height="100" />
         <div>
           <h1>Website Portal UMKM Bogor</h1>
-          <h2>Berkolaborasi dengan Sekolah Vokasi IPB</h2>
+          <h2>
+            Kolaborasi Sekolah Vokasi IPB dengan Dinas Koperasi dan UMKM Kota
+            Bogor
+          </h2>
         </div>
       </v-col>
     </v-row>
     <v-row class="pa-4 main-section">
-      <v-col cols="12">
+      <!-- <v-col cols="12">
         <v-card color="#f2f2f2">
           <v-card-title>
             About
@@ -24,7 +32,7 @@
             </p>
           </v-card-text>
         </v-card>
-      </v-col>
+      </v-col> -->
       <v-col cols="12">
         <v-card color="#f2f2f2">
           <v-card-title>
