@@ -19,7 +19,9 @@
       <v-container>
         <v-row>
           <v-col xl="6" cols="12" lg="6" md="6">
-            <img src="~/assets/sv.png" height="60" />
+            <v-card class="pa-4">
+              <img src="~/assets/sv.png" height="60" />
+            </v-card>
           </v-col>
           <v-col xl="6" cols="12" lg="6" md="6">
             Alamat & kontak
