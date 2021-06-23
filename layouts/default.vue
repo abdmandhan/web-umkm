@@ -4,7 +4,7 @@
       app
       dense
       elevate-on-scroll
-      src="/footerbg.jpg"
+      src="/umkm/footerbg.jpg"
       style="color:white"
     >
       <nuxt-link to="/">

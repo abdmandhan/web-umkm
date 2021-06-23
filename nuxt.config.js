@@ -20,7 +20,7 @@ export default {
       { hid: 'description', name: 'description', content: 'portal-umkm-bogor' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logo_ipb.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/umkm/logo_ipb.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap' }
     ]
   },
@@ -79,7 +79,14 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseUrl: 'http://klik.sv.ipb.ac.id/umkm-be'
+  },
+
+  router: {
+    base: '/umkm/'
+  },
+
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
