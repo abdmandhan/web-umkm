@@ -6,8 +6,14 @@
         <img
           src="~/assets/sv.png"
           height="100"
-          style="margin-right:20px;"
+          style="margin-right: 20px"
           class="img-sv"
+        />
+        <img
+          src="~/assets/inf.png"
+          width="100"
+          height="100"
+          style="margin-right: 20px"
         />
         <img src="~/assets/logo_bogor.png" width="100" height="100" />
         <div>
@@ -35,9 +41,7 @@
       </v-col> -->
       <v-col cols="12">
         <v-card color="#f2f2f2">
-          <v-card-title>
-            Daftar Website UMKM
-          </v-card-title>
+          <v-card-title> Daftar Website UMKM </v-card-title>
           <v-card-text>
             <v-row>
               <v-col
@@ -72,18 +76,18 @@ import CardWeb from "~/components/CardWeb.vue";
 
 export default {
   components: {
-    CardWeb
+    CardWeb,
   },
   data() {
     return {
-      teams: []
+      teams: [],
     };
   },
   mounted() {
-    this.$axios.get("/team").then(result => {
+    this.$axios.get("/team").then((result) => {
       this.teams = result.data.data;
     });
-  }
+  },
 };
 </script>
 

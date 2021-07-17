@@ -5,7 +5,7 @@
       dense
       elevate-on-scroll
       src="/footerbg.jpg"
-      style="color:white"
+      style="color: white"
     >
       <nuxt-link to="/">
         <h4>Portal UMKM Bogor</h4>
@@ -21,13 +21,15 @@
           <v-col xl="6" cols="12" lg="6" md="6">
             <v-card class="pa-4">
               <img src="~/assets/sv.png" height="60" />
+              <div>Dosen:</div>
+              <strong>Medhanita Dewi Renanti, SKom, MKom</strong>
+              <br />
+              <strong>Aditya Wicaksono, S.Komp, M.Kom</strong>
             </v-card>
           </v-col>
           <v-col xl="6" cols="12" lg="6" md="6">
             Alamat & kontak
-            <div>
-              Jl. Kumbang No. 14, Cilibende - Bogor Tengah
-            </div>
+            <div>Jl. Kumbang No. 14, Cilibende - Bogor Tengah</div>
             <div><v-icon color="white">mdi-phone</v-icon> (0251) 8376845</div>
             <div>
               <v-icon color="white">mdi-email</v-icon> sv@apps.ipb.ac.id
@@ -51,7 +53,7 @@
 export default {
   data() {
     return {};
-  }
+  },
 };
 </script>
 

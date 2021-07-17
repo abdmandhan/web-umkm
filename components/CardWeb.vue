@@ -1,7 +1,20 @@
 <template>
   <v-col cols="12" xl="2" lg="3" md="4" sm="6">
     <v-card elevation="5">
-      <v-img :src="data.website_image" max-height="150" />
+      <v-img
+        :src="data.website_image"
+        max-height="150"
+        lazy-src="https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg"
+      >
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row>
+        </template>
+      </v-img>
       <v-card-title>
         {{ data.website_name }}
         <!-- {{ data.website_name }} -->
@@ -49,12 +62,12 @@ export default {
       type: Object,
       default() {
         return {};
-      }
-    }
+      },
+    },
   },
   components: {
     AvatarGroup,
-    Avatar
-  }
+    Avatar,
+  },
 };
 </script>
